@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <script src="/js/jquery-3.4.0.min.js"></script>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <h1>To do list</h1>
+    <div id="list">
+        <div class="do" th:each="do : ${todolist}">
+            <a href="#" class="remove"></a>
+            <a href="#" class="do-link" th:attr="data-id=${do.id}" >
+                <h2 calss="name" th:text="${do.name}"></h2>
+                <p calss="date" th:text="${do.date}"></p>
+                <p class="description" th:text="${do.description}"></p>
+            </a>
+        </div>
+        <div id="add-do-button">
+            <a href="#">
+                <img src="/images/icons8-add-100.png" alt="add">
+            </a>
+        </div>
+    </div>
+    <div class="popup-fade" id="popup-do">    
+        <div class="popup">
+            <a class="popup-close" href="#">close</a>
+            <form>
+                <label>input date</label>
+                <input type="date" name="date" value="">
+                <label>input do name</label>
+                <input type="text" name="name" value="">
+                <label>input description</label>
+                <input type="text" name="description" value="">
+                <button id="add-do">add do</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup-fade" id="popup-desc">
+        <div class="popup"></div>
+    </div>
+
+
+</body>
+</html>
