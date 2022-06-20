@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="650.0" prefWidth="1256.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuiController.MainController">
+   <children>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="650.0" prefWidth="180.0" style="-fx-border-color: #d9d9d9; -fx-border-width: 0 4 0 0;" vgap="23.0">
+         <children>
+            <ImageView fitHeight="107.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/free-icon-contract-684831.png" />
+               </image>
+            </ImageView>
+            <Line endX="80.0" startX="-80.0" stroke="#d9d9d9" strokeWidth="4.0" />
+            <Label fx:id="nickNameLabel" maxHeight="27.0" maxWidth="114.0" text="Nick Name">
+               <font>
+                  <Font name="Consolas Bold" size="23.0" />
+               </font>
+            </Label>
+            <FlowPane alignment="TOP_CENTER" columnHalignment="CENTER" prefHeight="186.0" prefWidth="164.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10;" vgap="10.0">
+               <FlowPane.margin>
+                  <Insets />
+               </FlowPane.margin>
+               <children>
+                  <Button fx:id="settingBtn" mnemonicParsing="false" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #ffffff; -fx-background-radius: 8; -fx-border-color: #b5b5b5; -fx-border-width: 2; -fx-border-radius: 8;" text="Setting" textAlignment="CENTER">
+                     <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logOutBtn" layoutX="25.0" layoutY="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #ffffff; -fx-background-radius: 8; -fx-border-color: #b5b5b5; -fx-border-width: 2; -fx-border-radius: 8;" text="Log out" textAlignment="CENTER">
+                     <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </FlowPane>
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER" hgap="30.0" prefHeight="55.0" prefWidth="1076.0" style="-fx-border-color: #d9d9d9; -fx-border-width: 0 0 2 0;">
+         <children>
+            <Button fx:id="notesBtn" mnemonicParsing="false" prefHeight="42.0" prefWidth="170.0" style="-fx-background-color: #ffffff; -fx-border-color: #b5b5b5; -fx-border-width: 2; -fx-border-radius: 8;" text="Notes" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/free-icon-font-edit-3917442.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="toDoListBtn" layoutX="263.0" layoutY="13.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="170.0" style="-fx-background-color: #ffffff; -fx-border-color: #b5b5b5; -fx-border-width: 2; -fx-border-radius: 8;" text="To do list" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/free-icon-font-clipboard-list-check-7661486.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="calendarBtn" layoutX="206.0" layoutY="13.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="170.0" style="-fx-background-color: #ffffff; -fx-border-color: #b5b5b5; -fx-border-width: 2; -fx-border-radius: 8;" text="Calendar" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/free-icon-font-calendar-check-7546701.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </FlowPane>
+   </children>
+</FlowPane>

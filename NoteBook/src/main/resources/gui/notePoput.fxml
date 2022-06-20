@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="285.0" prefWidth="340.0" vgap="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label prefHeight="23.0" prefWidth="330.0" style="-fx-background-color: #3dcbff;" text="Category">
+         <font>
+            <Font name="Consolas Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputCat" prefWidth="330.0" />
+      <Label prefWidth="330.0" style="-fx-background-color: #ff7b47;" text="Name">
+         <font>
+            <Font name="Consolas Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputName" prefWidth="330.0" />
+      <Label prefWidth="330.0" style="-fx-background-color: #bdff52;" text="Text">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="inputText" maxHeight="1.7976931348623157E308" prefHeight="69.0" prefWidth="330.0" />
+      <FlowPane alignment="CENTER" hgap="40.0" prefHeight="53.0" prefWidth="330.0">
+         <children>
+            <Button fx:id="okBtn" mnemonicParsing="false" style="-fx-background-color: rgba(0, 0, 0, 0);">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/free-icon-font-check-3917749.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="cancelBtn" layoutX="151.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: rgba(0, 0, 0, 0);">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/free-icon-font-cross-3917759.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </FlowPane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</FlowPane>
